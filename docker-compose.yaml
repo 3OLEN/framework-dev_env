@@ -1,0 +1,21 @@
+services:
+  composer:
+    image: 3olen-framework-dev_env
+    container_name: dev_env-composer
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    entrypoint: ["composer"]
+    command: ["--version"]
+    volumes:
+    - ./:/usr/env
+  php:
+    image: 3olen-framework-dev_env
+    container_name: dev_env-php
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    entrypoint: ["php"]
+    command: ["--version"]
+    volumes:
+    - ./:/usr/env
