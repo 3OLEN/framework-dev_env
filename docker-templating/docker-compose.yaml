@@ -18,7 +18,7 @@ services:
     - ./public:/usr/app/public
     - ./var/log/nginx/:/usr/app/var/log/nginx/
     ports:
-    - "80:80"
+    - "8000:80"
     networks:
     - %my_app%-network
 
