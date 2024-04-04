@@ -1,4 +1,6 @@
 *
+!docker-templating/
+!docker-templating/**/*
 !.gitignore
 !docker-compose.yaml
 !Dockerfile
